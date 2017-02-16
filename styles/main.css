@@ -16,20 +16,26 @@ nav{
 }
 
 ul li{
-  
+  align-content:flex-start;
+  flex-wrap: wrap;
+  font-size: 1.5rem;
 }
 
 
 
-li a{
+li a:hover{
+  background-color: teal;
 }
 
 h1{
-  
+  font-size: 5.3rem;
 }
 
 aside{
-  
+  display:flex;
+  align-content:space-between;
+  flex-direction: row-reverse;
+  flex-flow: nowrap;
 }
 
 form{
@@ -40,12 +46,18 @@ input[type="submit"]
 {
   width: 4.5rem;
   display: block;
+  background-color: #39CCCC;
 
   
 }
 
 section{
+  display: inline-flex;
   
+}
+
+div{
+  flex-direction:row;
 }
 
 footer{
