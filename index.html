@@ -8,6 +8,15 @@
   <link rel="stylesheet" href="styles/reset.css">
   <link rel="stylesheet" href="styles/main.css">
   <script src="https://use.fontawesome.com/c245ccaa13.js"></script>
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> 
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
 </head>
 
 <body>
@@ -27,7 +36,7 @@
   </header>
 
   <aside>
-    <form>
+    <form name = "filterProd" onsubmit="capture">
       <label>Filter By:
         <select name="filter">
           <option value="">Choose One</option>
@@ -36,14 +45,14 @@
         </select>
       </label>
 
-      <input type="submit" value="Sort">
+      <input  type="submit" value="Sort">
     </form>
   </aside>
 
   <section>
     <h2>Scarves</h2>
 
-    <div class="item-container">
+    <div class="container">
       <div class="item">
         <h4>Reversible Plaid</h4>
          <img src="images/reversible-plaid.jpg" alt="reversible"/>
@@ -54,6 +63,8 @@
       </div>
     </div>
   </section>
+  
+  <footer>Winter Wear 2017</footer>
 
   <script type="text/javascript" src="js/script.js"></script>
 </body>
