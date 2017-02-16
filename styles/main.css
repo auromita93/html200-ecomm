@@ -1,0 +1,51 @@
+html{
+  font-family: 'Open Sans', sans-serif;
+}
+body{
+  display: flex;
+}
+header{
+  background-color:#39CCCC;
+}
+nav{
+  justify-content: center;
+  flex-direction: column-reverse;
+  
+}
+
+ul li{
+  
+}
+
+
+
+li a{
+}
+
+h1{
+  
+}
+
+aside{
+  
+}
+
+form{
+  
+}
+
+section{
+  
+}
+
+footer{
+  
+}
+section-footer{
+  text-align: center;
+}
+
+
+
+
+  
