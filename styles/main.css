@@ -5,11 +5,13 @@ body{
   display: flex;
 }
 header{
-  background-color:#39CCCC;
+  background-color: #39CCCC;
+  
 }
 nav{
   justify-content: center;
   flex-direction: column-reverse;
+  text-align:center;
   
 }
 
@@ -34,16 +36,23 @@ form{
   
 }
 
+input[type="submit"]
+{
+  width: 4.5rem;
+  display: block;
+
+  
+}
+
 section{
   
 }
 
 footer{
+  text-align:center;
   
 }
-section-footer{
-  text-align: center;
-}
+
 
 
 
