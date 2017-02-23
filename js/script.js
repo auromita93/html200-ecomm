@@ -49,7 +49,8 @@ var products = [
   }
 ]
 
-for(var i=0; i < products.length; i++)
+
+for (var i=0; i < products.length; i++)
   {
     var obj = products[i];
     
@@ -59,7 +60,7 @@ for(var i=0; i < products.length; i++)
   }
                 
 //javascript form handler
-  function capture(){
+function capture(){
       console.log(document.filterProd.filter.value);
       event.preventDefault();
     
