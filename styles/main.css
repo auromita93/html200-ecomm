@@ -1,66 +1,125 @@
 html{
   font-family: 'Open Sans', sans-serif;
 }
-body{
-  display: flex;
+
+.cart-info{
+  float: right;
+  padding-right: 1.875rem;
 }
+
 header{
-  background-color: #39CCCC;
+  background-color:grey;
+  padding-top: 0.3rem;
+}
+
+h1, .highlight{
+  background-color:grey;
+  color:white;
   
 }
-nav{
-  justify-content: center;
-  flex-direction: column-reverse;
+
+h1{
+  font-size:4.5rem;
+}
+
+.highlight{
+  text-align: center;
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+}
+.card-title{
+   background-color: grey;
+}
+
+#purple-button{
+  background-color:#8e42aa;  
+}
+
+.browser-default{
+  background-color
+}
+
+
+ul{
+  list-style-type: none;
+}
+.text{
   text-align:center;
 }
 
-ul li{
-  align-content:flex-start;
+.item-container{
+  display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
-  font-size: 1.5rem;
+  align-items:flex-start;
+  
+}
+
+.item{
+  display: flex;
+}
+
+
+
+.card{
+  border: 1px solid purple;
+ 
+ 
+
+}
+body{
+ 
+}
+
+
+ul{
+
+}
+
+ul li{
+ 
 }
 
 
 
 li a:hover{
-  background-color: teal;
+ 
 }
 
 h1{
-  font-size: 5.3rem;
+  text-align:center;
+ 
 }
 
 aside{
-  display:flex;
-  align-content:space-between;
-  flex-direction: row-reverse;
-  flex-flow: nowrap;
+ 
 }
+
+
 
 form{
   
 }
 
-input[type="submit"]
-{
-  width: 4.5rem;
-  display: block;
-  background-color: #39CCCC;
 
-  
-}
 
 section{
-  display: inline-flex;
+ 
   
 }
 
 div{
-  flex-direction:row;
+  
 }
 
 footer{
   text-align:center;
+  background-color:grey;
+  color: white;
+  padding-top: 3.8rem;
   
 }
 
