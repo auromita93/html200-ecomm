@@ -2,14 +2,34 @@ html{
   font-family: 'Open Sans', sans-serif;
 }
 
+.background{
+  background-image: url('https://s-media-cache-ak0.pinimg.com/originals/85/cd/be/85cdbef79f484d5b7e11fe6082980956.png');
+}
+@media only screen and (max-width: 300px){
+ .background{
+  background-image: none;
+  }
+}
 .cart-info{
-  float: right;
-  padding-right: 1.875rem;
+   float: left;
+   padding-left: 1.5rem;
+}
+@media screen and (min-width: 800px){
+  .cart-info{
+    float: right;
+    padding-right: 2.875rem;
+  }
 }
 
 header{
   background-color:grey;
   padding-top: 0.3rem;
+}
+
+@media screen and (max-width: 700px){
+  header{
+  background-color:lightgray;
+  }
 }
 
 h1, .highlight{
@@ -20,6 +40,7 @@ h1, .highlight{
 
 h1{
   font-size:4.5rem;
+  text-align:center;
 }
 
 .highlight{
@@ -36,10 +57,6 @@ img{
 
 #purple-button{
   background-color:#8e42aa;  
-}
-
-.browser-default{
-  background-color
 }
 
 
@@ -65,62 +82,19 @@ ul{
 
 
 .card{
-  border: 1px solid purple;
- 
- 
-
-}
-body{
- 
-}
-
-
-ul{
-
-}
-
-ul li{
- 
+  border: 1px solid purple; 
 }
 
 
 
-li a:hover{
- 
-}
-
-h1{
-  text-align:center;
- 
-}
-
-aside{
- 
-}
-
-
-
-form{
-  
-}
-
-
-
-section{
- 
-  
-}
-
-div{
-  
-}
 
 footer{
   text-align:center;
   background-color:grey;
   color: white;
-  padding-top: 3.8rem;
-  
+  position: absolute;
+  width: 100%;
+  padding: 3.5rem;  
 }
 
 
