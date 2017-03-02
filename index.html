@@ -2,9 +2,11 @@
 <html>
 <head>
   <title>Winter Scarves</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">
-    <!--Jquery-->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Jquery & JavaScript-->
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+
     <!--Stylesheets-->
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/main.css">
@@ -18,7 +20,7 @@
 
 </head>
 
-<body>
+<body class="background">
   <header>
    <h1>Winter Wear Warehouse</h1>
     <nav class="purple">
@@ -41,7 +43,7 @@
            <div class="input-field col s6">
          
              <select class="browser-default" name="filter">
-               <option value=""disabled selected>Filter By:</option>
+               <option value="" disabled selected>Filter By:</option>
                <option value="price">Price</option>
                <option value="name">Name</option>
              </select>
@@ -66,8 +68,8 @@
         <div class="col s12 m7">
           <div class="card">
             <div class="card-image">
-              <img srcset="images/reversible-plaid-400.jpg, 400w, images/reversible-plaid-800.jpg 800w, images/reversible-plaid-1280.jpg 1280w" sizes="(max-width: 800px) 400px, (max-width: 1600px) 800px, (min-width: 1601px) 1280px">
-              <span class="card-title" alt="reversible">Reversible Plaid</span>
+              <img src="images/reversible-plaid.jpg" srcset="images/reversible-plaid-400.jpg 400w, images/reversible-plaid-800.jpg 800w, images/reversible-plaid-1280.jpg 1280w" sizes="(max-width: 800px) 400px, (max-width: 1600px) 800px, (min-width: 1601px) 1280px" alt="reversible">
+              <span class="card-title">Reversible Plaid</span>
              </div>
              <div class="card-content">
               <ul>
@@ -87,7 +89,7 @@
         <div class="col s12 m7">
           <div class="card">
             <div class="card-image">
-              <img srcset="images/wool-cable-400.jpeg 400w, images/wool-cable-800.jpeg 800w, images/wool-cable-1280.jpeg 1280w" sizes="(max-width: 800px) 400px, (max-width: 1600px) 800px, (min-width: 1601px) 1280px" alt="wool">
+              <img src="images/wool-cable.jpeg" srcset="images/wool-cable-400.jpeg 400w, images/wool-cable-800.jpeg 800w, images/wool-cable-1280.jpeg 1280w" sizes="(max-width: 800px) 400px, (max-width: 1600px) 800px, (min-width: 1601px) 1280px" alt="wool">
               <span class="card-title">Wool Cable Knit</span>
              </div>
              <div class="card-content">
@@ -107,7 +109,7 @@
         <div class="col s12 m7">
           <div class="card">
             <div class="card-image">
-              <img srcset="images/northern-lights-400.jpg 400w, images/northern-lights-800.jpg 800w, images/northern-lights-1280.jpg 1280w" sizes="(max-width: 800px) 400px, (max-width: 1600px) 800px, (min-width: 1601px) 1280px" alt="northern">
+              <img src="images/northern-lights.jpg" srcset="images/northern-lights-400.jpg 400w, images/northern-lights-800.jpg 800w, images/northern-lights-1280.jpg 1280w" sizes="(max-width: 800px) 400px, (max-width: 1600px) 800px, (min-width: 1601px) 1280px" alt="northern">
               <span class="card-title">Northern Lights</span>
              </div>
              <div class="card-content">
@@ -128,7 +130,7 @@
         <div class="col s12 m7">
           <div class="card">
             <div class="card-image">
-              <img srcset="images/ombre-infinity-400.jpg 400w, images/ombre-infinity-800.jpg 800w, images/ombre-infinity-1280.jpg 1280w" size="(max-width: 1600px) 800px, (min-width: 1601px) 1280px" alt="ombre">
+              <img src="images/ombre-infinity.jpg" srcset="images/ombre-infinity-400.jpg 400w, images/ombre-infinity-800.jpg 800w, images/ombre-infinity-1280.jpg 1280w" sizes="(max-width: 1600px) 800px, (min-width: 1601px) 1280px" alt="ombre">
               <span class="card-title">Ombre Infinity</span>
              </div>
              <div class="card-content">
@@ -148,7 +150,7 @@
         <div class="col s12 m7">
           <div class="card">
             <div class="card-image">
-              <img srcset="images/fringed-plaid-400.jpeg 400w, images/fringed-plaid-800.jpeg 800w, images/fringed-plaid-1280.jpeg 1280w" alt="fringed" sizes="(max-width: 800px) 400px, (max-width: 1600px) 800px, (min-width: 1601px) 1280px">
+              <img src="images/fringed-plaid.jpeg" srcset="images/fringed-plaid-400.jpeg 400w, images/fringed-plaid-800.jpeg 800w, images/fringed-plaid-1280.jpeg 1280w" alt="fringed" sizes="(max-width: 800px) 400px, (max-width: 1600px) 800px, (min-width: 1601px) 1280px">
               <span class="card-title">Fringed Plaid</span>
              </div>
              <div class="card-content">
@@ -169,17 +171,15 @@
         <div class="col s12 m7">
           <div class="card">
             <div class="card-image">
-              <img srcset="images/multi-color-400.jpeg 400w, images/multi-color-800.jpeg 800w, images/multi-color-1280.jpeg 1280w" sizes="(max-width: 800px) 400px, (max-width: 1600px) 800px, (min-width: 1601px) 1280px" alt="multi">
+              <img src="images/multi-color.jpeg" srcset="images/multi-color-400.jpeg 400w, images/multi-color-800.jpeg 800w, images/multi-color-1280.jpeg 1280w" sizes="(max-width: 800px) 400px, (max-width: 1600px) 800px, (min-width: 1601px) 1280px" alt="multi">
               <span class="card-title">Multi Color</span>
              </div>
              <div class="card-content">
               <ul>
                <li><strong>Price:</strong>22.99</li>
-               <li><strong>Description:</strong>The Who What Wear Oversize Color-Block Square
+               <li><strong>Description:</strong>The Who What Wear Oversize Color-Block Square
                 Scarf is big, bold, and designed to twist and wrap any way you wish. All the 
-                colors of the season are harmonized in this+- oversize accent, so you can adjust 
-                to contrast or match your outfit; soft and lush, it’s your stylish standoff 
-                against cold AC and unexpected fall breezes. 100% acrylic.</li>
+                colors of the season are harmonized in this+- oversize accent, so you can adjust to contrast or match your outfit; soft and lush, it’s your stylish standoff against cold AC and unexpected fall breezes. 100% acrylic.</li>
              </ul>
             </div> 
           </div>
@@ -192,7 +192,7 @@
         <div class="col s12 m7">
           <div class="card">
             <div class="card-image">
-              <img srcset="images/etro-400.png 400w, images/etro-800.png 800w, images/etro-1280.png" sizes="(max-width: 800px) 400px, (max-width: 1600px) 800px, (min-width: 1601px) 1280px" alt="etro">
+              <img src="images/etro.png" srcset="images/etro-400.png 400w, images/etro-800.png 800w, images/etro-1280.png 1280w" sizes="(max-width: 800px) 400px, (max-width: 1600px) 800px, (min-width: 1601px) 1280px" alt="etro">
               <span class="card-title">Etro Paisley-Print Silk</span>
              </div>
              <div class="card-content">
@@ -212,7 +212,7 @@
         <div class="col s12 m7">
           <div class="card">
             <div class="card-image">
-              <img srcset="images/twill-400.jpg 400w, images/twill-800.jpg 800w, images/twill-1280.jpg 1280w" sizes="(max-width: 800px) 400px, (max-width: 1600px) 800px, (min-width: 1601px) 1280px"alt="ashby">
+              <img src="images/twill.jpg" srcset="images/twill-400.jpg 400w, images/twill-800.jpg 800w, images/twill-1280.jpg 1280w" sizes="(max-width: 800px) 400px, (max-width: 1600px) 800px, (min-width: 1601px) 1280px" alt="ashby">
               <span class="card-title">Ashby Twill</span>
              </div>
              <div class="card-content">
@@ -229,10 +229,11 @@
       
 
     </div>
-  </section>
-  
-  <footer>Winter Wear 2017</footer>
+  </div>
+   <footer>Winter Wear 2017</footer>
+  </body>
+ 
+ 
 
-  <script type="text/javascript" src="js/script.js"></script>
-</body>
+ 
 </html>
