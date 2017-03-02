@@ -56,7 +56,7 @@ for (var i=0; i < products.length; i++)
     
     console.log(obj.name);
     console.log(obj.price);
-    console.log(obj.description;
+    console.log(obj.description);
   }
                 
 //javascript form handler
