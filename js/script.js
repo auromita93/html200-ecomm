@@ -50,6 +50,7 @@ var products = [
 ]
 
 
+
 for (var i=0; i < products.length; i++)
   {
     var obj = products[i];
@@ -59,9 +60,76 @@ for (var i=0; i < products.length; i++)
     console.log(obj.description);
   }
                 
-//javascript form handler
+
+//--------------------------
+
+var cart = [];
+
+//add item
+function addItem (item) {
+  var index = cart.indexOf(item);
+  if (index <= 0) {
+    cart.push(item);
+  }
+  console.log(cart);  
+}
+
+//remove item
+function removeItem (item) {
+  var index = cart.indexOf(item);
+  if (index != -1){
+    cart.splice(index, 1);
+  }
+  console.log(cart);
+}
+
+//sort functions
+function sortName () {
+    products.sort(function(a,b){
+    if (a.name.toLowerCase() < b.name.toLowerCase())
+      return -1;
+    if (a.name.toLowerCase() > b.name.toLowerCase())
+      return 1;
+    return 0;
+  })
+  console.log(products);
+}
+
+function sortPrice() {
+  products.sort(function(a,b){
+    return a.price - b.price;
+});
+  console.log(products);
+}
+
+//javascript form handler on submit
 function capture(){
-      console.log(document.filterProd.filter.value);
-      event.preventDefault();
+     var filterBy = document.filterProd.filter.value;
+    //what happens when filtered by each category
+     
+     if(filterBy == "price"){
+      sortPrice();
+      
+      for(var i = 0; i < products.length; i++){
+        console.log(products[i].price);
+      }
+     }
     
+    
+     
+    else if (filterBy == "name") {
+     sortName();
+    
+     for(var i = 0; i < products.length; i++){
+     console.log(products[i].name);
     }
+    }
+       event.preventDefault();
+    
+}
+
+//total of cart
+
+
+    
+    
