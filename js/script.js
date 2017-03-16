@@ -71,7 +71,9 @@ function addItem (item) {
   if (index <= 0) {
     cart.push(item);
   }
-  console.log(cart);  
+  console.log(cart);
+  var cart_total = document.getElementById("cart_total");
+  cart_total.innerHTML = cart.length;
 }
 
 //remove item
@@ -81,6 +83,8 @@ function removeItem (item) {
     cart.splice(index, 1);
   }
   console.log(cart);
+   var cart_total = document.getElementById("cart_total");
+  cart_total.innerHTML = cart.length;
 }
 
 //sort functions
