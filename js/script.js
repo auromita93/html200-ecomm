@@ -97,6 +97,7 @@ function sortName () {
     return 0;
   })
   var sortNameBy = document.getElementsByTagName("span");
+  sortNameBy.innerHTML = products.name;
   console.log(products);
 }
 
@@ -106,6 +107,7 @@ function sortPrice() {
 });
   var sortPriceBy =
   document.getElementById("item-price");
+  sortPriceBy.innerHTML = products.price;
   console.log(products);
 }
 
